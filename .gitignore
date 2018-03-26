@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+wpg/wpg.Core/obj/*
+wpg/wpg.Infrastructure/obj/*
+wpg/wpg/bin/*
+wpg/wpg/obj/*
+wpg/.vs/wpg/v15/.suo
+wpg/.vs/wpg/v15/sqlite3/storage.ide
