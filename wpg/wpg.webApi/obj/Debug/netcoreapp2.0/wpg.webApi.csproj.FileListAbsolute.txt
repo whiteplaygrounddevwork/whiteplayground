@@ -1,0 +1,12 @@
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\bin\Debug\netcoreapp2.0\wpg.webApi.deps.json
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\bin\Debug\netcoreapp2.0\wpg.webApi.runtimeconfig.json
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\bin\Debug\netcoreapp2.0\wpg.webApi.runtimeconfig.dev.json
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\bin\Debug\netcoreapp2.0\wpg.webApi.dll
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\bin\Debug\netcoreapp2.0\wpg.webApi.pdb
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\obj\Debug\netcoreapp2.0\wpg.webApi.csprojResolveAssemblyReference.cache
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\obj\Debug\netcoreapp2.0\wpg.webApi.csproj.CoreCompileInputs.cache
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\obj\Debug\netcoreapp2.0\wpg.webApi.AssemblyInfoInputs.cache
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\obj\Debug\netcoreapp2.0\wpg.webApi.AssemblyInfo.cs
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\obj\Debug\netcoreapp2.0\wpg.webApi.dll
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\obj\Debug\netcoreapp2.0\wpg.webApi.pdb

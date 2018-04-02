@@ -23,6 +23,12 @@ namespace wpg
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+        
+
+
+            //config the db connection string 
+            // wpg.Models.wpg_devContext.ConnectionString = Configuration.GetConnectionString("TestCon");
             services.AddMvc();
         }
 

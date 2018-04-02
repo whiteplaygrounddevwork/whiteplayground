@@ -1,4 +1,9 @@
 {
+
+  "ConnectionStrings": {
+    "TestCon": "\"Data Source=wpg-dev.database.windows.net;Initial Catalog=wpg-dev;User ID=wpgAdmin;password=\"K$A5ehyv=E8Eehb;TrustServerCertificate=True;User",
+    "Instance=False\"": ""
+  },
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
