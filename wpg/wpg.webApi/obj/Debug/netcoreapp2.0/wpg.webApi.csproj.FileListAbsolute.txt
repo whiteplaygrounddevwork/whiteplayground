@@ -10,3 +10,8 @@ E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\obj\Debug\netco
 E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\obj\Debug\netcoreapp2.0\wpg.webApi.AssemblyInfo.cs
 E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\obj\Debug\netcoreapp2.0\wpg.webApi.dll
 E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\obj\Debug\netcoreapp2.0\wpg.webApi.pdb
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\bin\Debug\netcoreapp2.0\wpg.Infrastructure.dll
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\bin\Debug\netcoreapp2.0\wpg.Infrastructure.pdb
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\obj\Debug\netcoreapp2.0\wpg.webApi.csproj.CopyComplete
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\bin\Debug\netcoreapp2.0\wpg.Core.dll
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.webApi\bin\Debug\netcoreapp2.0\wpg.Core.pdb

@@ -1,0 +1,11 @@
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.api\bin\Debug\netcoreapp2.0\wpg.api.deps.json
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.api\bin\Debug\netcoreapp2.0\wpg.api.runtimeconfig.json
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.api\bin\Debug\netcoreapp2.0\wpg.api.runtimeconfig.dev.json
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.api\bin\Debug\netcoreapp2.0\wpg.api.dll
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.api\bin\Debug\netcoreapp2.0\wpg.api.pdb
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.api\obj\Debug\netcoreapp2.0\wpg.api.csprojResolveAssemblyReference.cache
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.api\obj\Debug\netcoreapp2.0\wpg.api.csproj.CoreCompileInputs.cache
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.api\obj\Debug\netcoreapp2.0\wpg.api.AssemblyInfoInputs.cache
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.api\obj\Debug\netcoreapp2.0\wpg.api.AssemblyInfo.cs
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.api\obj\Debug\netcoreapp2.0\wpg.api.dll
+E:\DURANIT\WhitePlaygroundProject\whiteplayground\wpg\wpg.api\obj\Debug\netcoreapp2.0\wpg.api.pdb

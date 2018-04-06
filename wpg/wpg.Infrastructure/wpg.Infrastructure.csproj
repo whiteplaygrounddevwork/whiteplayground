@@ -5,9 +5,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\AccountViewModels\**" />
+    <Compile Remove="Models\ManageViewModels\**" />
+    <EmbeddedResource Remove="Models\AccountViewModels\**" />
+    <EmbeddedResource Remove="Models\ManageViewModels\**" />
+    <None Remove="Models\AccountViewModels\**" />
+    <None Remove="Models\ManageViewModels\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\wpg.Core\wpg.Core.csproj" />
   </ItemGroup>
 
 </Project>

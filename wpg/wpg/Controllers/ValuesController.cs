@@ -2,32 +2,26 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using wpg.Infrastructure.Models;
 
 namespace wpg.Controllers
 {
+
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
         // GET api/values
+        [Authorize("Bearer")]
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            using (var db = new wpg_devContext())
-            {
-                Customer cust = new Customer();
-                cust.Name = "Prasad1";
-                cust.Id = 2;
-                db.Customer.Add(cust);
-                db.SaveChanges();
-            }
-
                 return new string[] { "value1", "value2" };
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
+        [Authorize]
         public string Get(int id)
         {
             return "value";

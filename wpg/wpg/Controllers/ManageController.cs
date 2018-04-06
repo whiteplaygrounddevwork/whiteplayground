@@ -10,9 +10,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using wpg.webApi.Models;
-using wpg.webApi.Models.ManageViewModels;
-using wpg.webApi.Services;
+using wpg.Core.Interfaces;
+using wpg.Core.DTO;
+using wpg.Core.DTO.ManageDTO;
+using wpg.Core.DTO.ManageViewDTO;
 
 namespace wpg.webApi.Controllers
 {
@@ -121,10 +122,12 @@ namespace wpg.webApi.Controllers
                 throw new ApplicationException($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
             }
 
+            //PK
+
             var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-            var callbackUrl = Url.EmailConfirmationLink(user.Id, code, Request.Scheme);
+            //var callbackUrl = Url.EmailConfirmationLink(user.Id, code, Request.Scheme);
             var email = user.Email;
-            await _emailSender.SendEmailConfirmationAsync(email, callbackUrl);
+            //await _emailSender.SendEmailConfirmationAsync(email, callbackUrl);
 
             StatusMessage = "Verification email sent. Please check your email.";
             return RedirectToAction(nameof(Index));

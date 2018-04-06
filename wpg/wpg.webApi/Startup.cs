@@ -10,7 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using wpg.webApi.Data;
 using wpg.webApi.Models;
-using wpg.webApi.Services;
+
 
 namespace wpg.webApi
 {
@@ -34,7 +34,7 @@ namespace wpg.webApi
                 .AddDefaultTokenProviders();
 
             // Add application services.
-            services.AddTransient<IEmailSender, EmailSender>();
+            //services.AddTransient<IEmailSender, EmailSender>();
 
             services.AddMvc();
         }

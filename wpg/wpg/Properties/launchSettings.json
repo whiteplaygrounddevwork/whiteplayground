@@ -1,16 +1,19 @@
 {
-
-  "ConnectionStrings": {
-    "TestCon": "\"Data Source=wpg-dev.database.windows.net;Initial Catalog=wpg-dev;User ID=wpgAdmin;password=\"K$A5ehyv=E8Eehb;TrustServerCertificate=True;User",
-    "Instance=False\"": ""
-  },
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
+    "iis": {
+      "applicationUrl": "http://localhost/wpg",
+      "sslPort": 0
+    },
     "iisExpress": {
       "applicationUrl": "http://localhost:55335/",
       "sslPort": 0
     }
+  },
+  "ConnectionStrings": {
+    "TestCon": "\"Data Source=wpg-dev.database.windows.net;Initial Catalog=wpg-dev;User ID=wpgAdmin;password=\"K$A5ehyv=E8Eehb;TrustServerCertificate=True;User",
+    "Instance=False\"": ""
   },
   "profiles": {
     "IIS Express": {
@@ -28,7 +31,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:55336/"
+      "applicationUrl": "http://localhost:5000/"
     }
   }
 }

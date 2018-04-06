@@ -5,21 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Areas\**" />
     <Compile Remove="Models\**" />
+    <Content Remove="Areas\**" />
     <Content Remove="Models\**" />
+    <EmbeddedResource Remove="Areas\**" />
     <EmbeddedResource Remove="Models\**" />
+    <None Remove="Areas\**" />
     <None Remove="Models\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Controllers\AccountController.cs" />
-    <Compile Remove="Controllers\ManageController.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Areas\Authentication\Data\" />
-    <Folder Include="Areas\Authentication\Models\" />
-    <Folder Include="Areas\Authentication\Views\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
@@ -28,14 +24,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="IdentityModel" Version="3.3.1" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.2" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+    <PackageReference Include="Unity" Version="5.8.4" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\wpg.Core\wpg.Core.csproj" />
     <ProjectReference Include="..\wpg.Infrastructure\wpg.Infrastructure.csproj" />
   </ItemGroup>
 
