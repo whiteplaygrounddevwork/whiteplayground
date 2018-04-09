@@ -18,14 +18,12 @@ namespace wpg.DependencyInjection
     {
         public static void Dependencies(IServiceCollection services)
         {
-            services.AddTransient<DbContext, wpg_devContext>();
+            services.AddTransient<DbContext, WPGContext>();
             services.AddTransient<IUserStore<ApplicationUser>, UserStore<ApplicationUser>>();
             services.AddTransient<IRoleStore<IdentityRole>, RoleStore<IdentityRole>>();
             services.AddTransient<SignInManager<ApplicationUser>, SignInManager<ApplicationUser>>();
             services.AddTransient<IAccount, Account>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
-            services.AddTransient<ITesTable, TesTable>();
-            services.AddTransient<ITest, Test>();
         }
     }
 }

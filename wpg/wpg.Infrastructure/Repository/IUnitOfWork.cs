@@ -14,9 +14,9 @@ namespace wpg.Infrastructure.Repository
 
     public class UnitOfWork : IUnitOfWork,IDisposable
     {
-        private readonly wpg_devContext dbContext;
+        private readonly WPGContext dbContext;
 
-        public UnitOfWork(wpg_devContext dbContext)
+        public UnitOfWork(WPGContext dbContext)
         {
             this.dbContext = dbContext;
         }

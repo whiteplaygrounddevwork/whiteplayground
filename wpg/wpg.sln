@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wpg.Core", "wpg.Core\wpg.Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wpg.Infrastructure", "wpg.Infrastructure\wpg.Infrastructure.csproj", "{5718A8A9-5764-4AAA-95C7-70AC89520F34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpg.webApi", "wpg.webApi\wpg.webApi.csproj", "{6F8F335D-FF51-42E8-B6E0-ED2D3D895816}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{5718A8A9-5764-4AAA-95C7-70AC89520F34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5718A8A9-5764-4AAA-95C7-70AC89520F34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5718A8A9-5764-4AAA-95C7-70AC89520F34}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6F8F335D-FF51-42E8-B6E0-ED2D3D895816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6F8F335D-FF51-42E8-B6E0-ED2D3D895816}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6F8F335D-FF51-42E8-B6E0-ED2D3D895816}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6F8F335D-FF51-42E8-B6E0-ED2D3D895816}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

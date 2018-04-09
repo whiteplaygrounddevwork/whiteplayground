@@ -9,9 +9,9 @@ namespace wpg.Infrastructure.Repository.Implementation
 {
     public class Repository<T> : IRepository<T> where T : class 
     {
-        private readonly wpg_devContext _dbContext;
+        private readonly WPGContext _dbContext;
 
-        public Repository(wpg_devContext dbContext)
+        public Repository(WPGContext dbContext)
         {
             _dbContext = dbContext;
         }

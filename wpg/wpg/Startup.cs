@@ -19,12 +19,11 @@ using Microsoft.IdentityModel.Tokens;
 using Unity;
 using Unity.Injection;
 using Unity.Lifetime;
-using wpg.Core.Config;
 using wpg.Core.Interfaces;
 using wpg.DependencyInjection;
 using wpg.Infrastructure.Implementation;
 using wpg.Infrastructure.Models;
-using wpg.Settings;
+using wpg.Helpers;
 using wpg.webApi.Controllers;
 
 namespace wpg
@@ -75,7 +74,7 @@ namespace wpg
             });
 
             //Identity settings
-            Identity.setup(services, Configuration.GetConnectionString("TestCon"));
+            DBContextHelper.setup(services, Configuration.GetConnectionString("wpg-con"));
 
             //Dependency Injection Settings
             Register.Dependencies(services);

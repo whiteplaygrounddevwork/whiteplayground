@@ -5,11 +5,30 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DTO\AccountDTO\**" />
+    <Compile Remove="DTO\ManageDTO\**" />
+    <EmbeddedResource Remove="DTO\AccountDTO\**" />
+    <EmbeddedResource Remove="DTO\ManageDTO\**" />
+    <None Remove="DTO\AccountDTO\**" />
+    <None Remove="DTO\ManageDTO\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="DTO\ApplicationUser.cs" />
+    <Compile Remove="DTO\ErrorViewModel.cs" />
+    <Compile Remove="Interfaces\IEmailSender.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.MVC" Version="2.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.2" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DTO\" />
   </ItemGroup>
 
 </Project>

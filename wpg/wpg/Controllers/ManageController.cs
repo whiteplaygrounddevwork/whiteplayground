@@ -14,6 +14,7 @@ using wpg.Core.Interfaces;
 using wpg.Core.DTO;
 using wpg.Core.DTO.ManageDTO;
 using wpg.Core.DTO.ManageViewDTO;
+using wpg.Infrastructure.Models;
 
 namespace wpg.webApi.Controllers
 {
@@ -23,7 +24,6 @@ namespace wpg.webApi.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
-        private readonly IEmailSender _emailSender;
         private readonly ILogger _logger;
         private readonly UrlEncoder _urlEncoder;
 
@@ -33,13 +33,11 @@ namespace wpg.webApi.Controllers
         public ManageController(
           UserManager<ApplicationUser> userManager,
           SignInManager<ApplicationUser> signInManager,
-          IEmailSender emailSender,
           ILogger<ManageController> logger,
           UrlEncoder urlEncoder)
         {
             _userManager = userManager;
             _signInManager = signInManager;
-            _emailSender = emailSender;
             _logger = logger;
             _urlEncoder = urlEncoder;
         }
