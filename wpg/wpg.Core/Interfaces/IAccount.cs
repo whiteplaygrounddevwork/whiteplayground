@@ -7,7 +7,14 @@ namespace wpg.Core.Interfaces
 {
     public interface IAccount
     {
-         Task<string> Register(string email, string password, string returnUrl = null);
+         Task<ResponseViewModal> Register(string email, string password, string returnUrl = null);
         Task<string> Login(string email, string password, bool remeberMe);
+    }
+
+
+    public class ResponseViewModal
+    {
+        public string Message { get; set; }
+        public bool isPassed { get; set; }
     }
 }

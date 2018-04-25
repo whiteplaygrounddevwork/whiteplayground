@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using wpg.Core.Interfaces;
@@ -27,9 +28,7 @@ namespace wpg.Infrastructure.Implementation
         {
             try
             {
-                var result = await _signInManager.PasswordSignInAsync(email, password, remeberMe, lockoutOnFailure: false);
-
-               
+                var result = await _signInManager.PasswordSignInAsync(email, password, remeberMe, lockoutOnFailure: false);              
                
 
                 if (result.Succeeded)
@@ -59,11 +58,12 @@ namespace wpg.Infrastructure.Implementation
             
         }
 
-        public async Task<string> Register(string email, string password, string returnUrl = null)
+        public async Task<ResponseViewModal> Register(string email, string password, string returnUrl = null)
         {
             try
             {
                 string code = string.Empty;
+
                 var user = new ApplicationUser { UserName = email, Email = email };
 
                 var result = await _userManager.CreateAsync(user, password);
@@ -71,13 +71,37 @@ namespace wpg.Infrastructure.Implementation
                 {
                     code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     await _signInManager.SignInAsync(user, isPersistent: false);
+                    return new ResponseViewModal()
+                    {
+                        isPassed = true,
+                        Message = code
+                    };
                 }
-                return code;
+                else{
+                    var error = string.Empty;
+                    var errorList = new List<string>();
+                    foreach (var errorResult in result.Errors)
+                    {
+                        errorList.Add(errorResult.Description);
+                    }
+                    return new ResponseViewModal()
+                    {
+                        isPassed = false,
+                        Message = string.Join(",", errorList)
+                    }; 
+                }
+                
             }
             catch (Exception ex)
             {
-                return "Failed : "+ex.Message;
+                return new ResponseViewModal()
+                {
+                    isPassed = false,
+                    Message = ex.Message
+                };
             }
         }
+        
     }
+
 }

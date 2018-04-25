@@ -229,7 +229,7 @@ namespace wpg.webApi.Controllers
         //[AllowAnonymous]
         //[ValidateAntiForgeryToken]
         [Route("Register")]
-         public async Task<string> Register(RegisterViewModel model, string returnUrl = null)
+         public async Task<ResponseViewModal> Register(RegisterViewModel model, string returnUrl = null)
         //public async Task<bool> Register(string email,string password, string returnUrl = null)
         {
              return await _IAccount.Register(model.Email,model.Password,returnUrl);
